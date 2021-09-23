@@ -1,2 +1,1 @@
-# terraform
-teraform-labs
+# my-rnd
