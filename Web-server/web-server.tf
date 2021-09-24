@@ -6,10 +6,20 @@ terraform {
     }
   }
 }
+variable "access_key" {
+   description = "this is for the access key"
+   type = string
+  
+}
+variable "secret_key" {
+  description = "secret key insertion"
+  type = string
+  
+}
 provider "aws" {
     region = "us-west-2"
-    access_key = "AKIA3ZC7ID2V5QZ67SN4"
-    secret_key = "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"
+    access_key = var.access_key
+    secret_key = var.secret_key
 }
 
 #variable "subnetprefix" {
